@@ -39,21 +39,21 @@ Instalación de Angular CLI:
 
 ⚡ Pasos para correr el proyecto
 
-# 1. Crea un nuevo proyecto Angular con standalone y SCSS
+1. Crea un nuevo proyecto Angular con standalone y SCSS
 
 ng new movie-explorer --standalone --routing --style=scss
 
 cd movie-explorer
 
-# 2. Agrega Angular Material
+2. Agrega Angular Material
 
 ng add @angular/material
 
-# 3. Instala dependencias
+3. Instala dependencias
 
 npm install
 
-# 4. Inicia el servidor de desarrollo
+4. Inicia el servidor de desarrollo
 
 ng serve -o
 
