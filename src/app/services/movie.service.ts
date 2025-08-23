@@ -8,7 +8,7 @@ export class MovieService {
 
 {
   id: 30,
-  tittle: 'Jorge Santamaría',
+  title: 'Jorge Santamaría',
   posterUrl: 'https://tufoto.com/jorge.jpg',
   overview: 'Desarrollador apasionado por el software y la tecnología.',
   
