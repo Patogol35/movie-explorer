@@ -6,17 +6,11 @@ export class MovieService {
   // Catálogo de películas conocidas con posters reales
   private readonly _movies = signal<Movie[]>([
 
-{
-  id: 1,
-  title: 'Jorge Santamaría',
-  posterUrl: 'https://tufoto.com/jorge.jpg',
-  overview: 'Desarrollador apasionado por el software y la tecnología.',
-  
-},
+
     
     {
-      id: 1000,
-      title: 'Titanic',
+      id: 1,
+      title: 'Te amo bianca',
       year: 1997,
       genres: ['Romance', 'Drama'],
       posterUrl: 'https://storage.googleapis.com/pod_public/750/266355.jpg',
