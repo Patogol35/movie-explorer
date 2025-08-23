@@ -8,7 +8,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 selector: 'app-home',
 standalone: true,
 imports: [CommonModule, MatToolbarModule, MovieCardComponent, SearchFilterComponent],
-template:   <mat-toolbar color="primary" class="toolbar">   <span class="logo">🎬 Movie Explorer - Jorge Patricio Santamaría Cherrez</span>    </mat-toolbar>   <div class="container">   <app-search-filter (changed)="onFilter($event)" #sf></app-search-filter>   <div class="grid">   <app-movie-card *ngFor="let m of filtered" [movie]="m"></app-movie-card>   </div>   <p class="empty" *ngIf="filtered.length === 0">No se encontraron resultados.</p>   </div>  ,
+template:   <mat-toolbar color="primary" class="toolbar">   <span class="logo">🎬 Movie Explorer</span>  </mat-toolbar>   <div class="container">   <app-search-filter (changed)="onFilter($event)" #sf></app-search-filter>   <div class="grid">   <app-movie-card *ngFor="let m of filtered" [movie]="m"></app-movie-card>   </div>   <p class="empty" *ngIf="filtered.length === 0">No se encontraron resultados.</p>   </div>  ,
 styles: [  .toolbar { position: sticky; top: 0; z-index: 10; }   .logo { font-weight: 700; letter-spacing: .3px; }   .container { max-width: 1100px; margin: 1rem auto; padding: 0 1rem 2rem; display: grid; gap: 1rem; }   .grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 1rem; }   @media (max-width: 1200px) { .grid { grid-template-columns: repeat(5, 1fr); } }   @media (max-width: 1000px) { .grid { grid-template-columns: repeat(4, 1fr); } }   @media (max-width: 800px) { .grid { grid-template-columns: repeat(3, 1fr); } }   @media (max-width: 600px) { .grid { grid-template-columns: repeat(2, 1fr); } }   .empty { opacity: .8; text-align: center; margin-top: 2rem; }  ]
 })
 export class HomeComponent implements OnInit {
@@ -30,3 +30,5 @@ return byTitle && byGenre;
 });
 }
 } 
+
+  
