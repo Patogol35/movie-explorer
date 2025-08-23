@@ -31,6 +31,30 @@
   gap: 1rem;
 }
 
+
+
+
+.toolbar-content {
+  display: flex;
+  flex-direction: column; /* apila verticalmente */
+}
+
+.logo {
+  font-weight: 700; 
+  font-size: 1.4rem;
+  letter-spacing: .5px; 
+  color: #e50914; /* rojo estilo Netflix */
+}
+
+.subtitle {
+  font-size: 0.9rem;
+  color: white;
+  opacity: 0.8;
+  margin-top: 2px; /* separa un poco del logo */
+}
+
+
+
 /* Ajustes de cada tarjeta */
 app-movie-card {
   max-width: 180px;
