@@ -1,0 +1,13 @@
+<mat-toolbar color="primary" class="toolbar">
+  <span class="logo">🎬 Movie Explorer - Jorge Patricio Santamaría Cherrez</span>
+</mat-toolbar>
+
+<div class="container">
+  <app-search-filter (changed)="onFilter($event)" #sf></app-search-filter>
+
+  <div class="grid">
+    <app-movie-card *ngFor="let m of filtered" [movie]="m"></app-movie-card>
+  </div>
+
+  <p class="empty" *ngIf="filtered.length === 0">No se encontraron resultados.</p>
+</div>
