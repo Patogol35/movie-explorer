@@ -1,0 +1,32 @@
+<div class="wrapper" *ngIf="movieFound; else notFound">
+  <button mat-button routerLink="/">
+    <mat-icon>arrow_back</mat-icon>
+    Volver
+  </button>
+
+  <div class="detail">
+    <img [src]="movieFound.posterUrl" [alt]="movieFound.title"/>
+    <div class="info">
+      <h1>{{ movieFound.title }} <span>({{ movieFound.year }})</span></h1>
+      
+      <div class="chips">
+        <mat-chip-set>
+          <mat-chip *ngFor="let g of movieFound.genres">{{ g }}</mat-chip>
+        </mat-chip-set>
+      </div>
+
+      <p class="overview">{{ movieFound.overview }}</p>
+      <p class="rating">
+        <mat-icon>star</mat-icon>
+        {{ movieFound.rating | number:'1.1-1' }} / 10
+      </p>
+    </div>
+  </div>
+</div>
+
+<ng-template #notFound>
+  <div class="not-found">
+    <p>Película no encontrada.</p>
+    <a mat-button color="primary" routerLink="/">Ir al inicio</a>
+  </div>
+</ng-template>
