@@ -37,7 +37,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
   `]
 })
 export class HomeComponent implements OnInit {
-  filtered = [];
+  filtered: any[] = [];
 
   @ViewChild('sf') searchFilter?: SearchFilterComponent;
 
