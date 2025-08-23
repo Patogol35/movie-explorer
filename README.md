@@ -81,8 +81,6 @@ Angular Material
 
 👨‍💻 Autor
 
-Proyecto desarrollado por:
-
 Jorge Patricio Santamaría Cherrez
 
 Máster en Ingeniería de Software y Sistemas Informáticos 
