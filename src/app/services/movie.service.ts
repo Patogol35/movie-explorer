@@ -8,11 +8,9 @@ export class MovieService {
 
 {
   id: 30,
-  name: 'Jorge Santamaría',
-  country: 'Ecuador',
-  hobbies: ['Programación','Música'],
-  photoUrl: 'https://tufoto.com/jorge.jpg',
-  bio: 'Desarrollador apasionado por el software y la tecnología.',
+  tittle: 'Jorge Santamaría',
+  posterUrl: 'https://tufoto.com/jorge.jpg',
+  overview: 'Desarrollador apasionado por el software y la tecnología.',
   
 },
     
