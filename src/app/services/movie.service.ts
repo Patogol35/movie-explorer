@@ -7,7 +7,7 @@ export class MovieService {
   private readonly _movies = signal<Movie[]>([
 
 {
-  id: 30,
+  id: 1,
   title: 'Jorge Santamaría',
   posterUrl: 'https://tufoto.com/jorge.jpg',
   overview: 'Desarrollador apasionado por el software y la tecnología.',
@@ -15,7 +15,7 @@ export class MovieService {
 },
     
     {
-      id: 1,
+      id: 1000,
       title: 'Titanic',
       year: 1997,
       genres: ['Romance', 'Drama'],
