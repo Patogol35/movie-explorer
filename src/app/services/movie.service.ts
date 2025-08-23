@@ -119,7 +119,16 @@ export class MovieService {
   posterUrl: 'https://i.pinimg.com/736x/77/4a/a5/774aa501b0a9add260bd93d716a77420.jpg',
   overview: 'Goku y Vegeta enfrentan a Broly, un Saiyajin con un poder abrumador, en una batalla épica que redefine sus límites.',
   rating: 8.1,
-}
+},
+    {
+  id: 15,
+  title: 'El Viaje de Chihiro',
+  year: 2001,
+  genres: ['Fantasy','Adventure','Anime'],
+  posterUrl:'https://www.lavanguardia.com/peliculas-series/images/all/movie/posters/2001/7/movie-129/w1280/RTVpv1HmdbMi7iPpVURuCupTW4.jpg',
+  overview: 'Chihiro, una niña de 10 años, queda atrapada en un mundo mágico gobernado por dioses, brujas y espíritus. Para salvar a sus padres y regresar al mundo humano, debe encontrar su valor y madurar en el proceso.',
+  rating: 8.6,
+    },
     
   ]);
 
