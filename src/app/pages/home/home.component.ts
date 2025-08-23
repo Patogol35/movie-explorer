@@ -11,13 +11,17 @@ import { MatToolbarModule } from '@angular/material/toolbar';
   template: `
 
 <mat-toolbar color="primary" class="toolbar">
-  <span class="logo">
+
+<mat-toolbar color="primary" class="toolbar" style="display: flex; justify-content: space-between; align-items: center; padding: 0 1rem;">
+  <span class="logo" style="font-size: 1.5rem; font-weight: 700;">
     🎬 Movie Explorer
   </span>
-  <span class="logo">
-    Proyecto desarrollado por <br> Jorge Patricio Santamaría Cherrez
+  <span class="logo" style="font-size: 1rem; font-weight: 500;">
+    Proyecto desarrollado por Jorge Patricio Santamaría Cherrez
   </span>
 </mat-toolbar>
+
+
 
     <div class="container">
       <app-search-filter (changed)="onFilter($event)" #sf></app-search-filter>
