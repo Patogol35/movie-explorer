@@ -5,6 +5,17 @@ import { Movie } from '../models/movie.model';
 export class MovieService {
   // Catálogo de películas conocidas con posters reales
   private readonly _movies = signal<Movie[]>([
+
+{
+  id: 0,
+  name: 'Jorge Santamaría',
+  country: 'Ecuador',
+  hobbies: ['Programación','Música'],
+  photoUrl: 'https://tufoto.com/jorge.jpg',
+  bio: 'Desarrollador apasionado por el software y la tecnología.',
+  
+},
+    
     {
       id: 1,
       title: 'Titanic',
