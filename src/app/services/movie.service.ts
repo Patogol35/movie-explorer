@@ -116,7 +116,7 @@ export class MovieService {
   title: 'Dragon Ball Super: Broly',
   year: 2018,
   genres: ['Action', 'Adventure', 'Fantasy', 'Anime'],
-  posterUrl: 'https://upload.wikimedia.org/wikipedia/en/0/01/Dragon_Ball_Super_Broly_poster.jpg',
+  posterUrl: 'https://www.impawards.com/intl/japan/2018/dragon_ball_super_broly_xlg.jpg',
   overview: 'Goku y Vegeta enfrentan a Broly, un Saiyajin con un poder abrumador, en una batalla épica que redefine sus límites.',
   rating: 8.1,
 }
