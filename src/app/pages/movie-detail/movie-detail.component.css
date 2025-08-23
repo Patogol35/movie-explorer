@@ -1,13 +1,11 @@
 .wrapper { 
   max-width: 1100px; 
   margin: 1rem auto; 
-  padding: 1rem; 
+  padding: 0 1rem 2rem; 
   display: grid; 
-  gap: 1.5rem; 
-  color: white;  /* texto claro */
+  gap: 1rem; 
 }
 
-/* Layout: póster + info */
 .detail { 
   display: grid; 
   grid-template-columns: 300px 1fr; 
@@ -15,67 +13,42 @@
   align-items: flex-start; 
 }
 
-/* Imagen del póster */
 img { 
   width: 100%; 
   border-radius: 12px; 
   object-fit: cover; 
-  box-shadow: 0 6px 20px rgba(0,0,0,.6); 
-  transition: transform 0.3s ease;
+  box-shadow: 0 6px 20px rgba(0,0,0,.2); 
 }
 
-img:hover {
-  transform: scale(1.05); /* pequeño zoom tipo Netflix */
-}
-
-/* Título */
 .info h1 { 
   margin: 0; 
   line-height: 1.2; 
-  font-size: 1.8rem;
 }
 
 .info h1 span { 
   opacity: 0.7; 
   font-weight: 400; 
-  font-size: 1.2rem;
 }
 
-/* Texto descriptivo */
 .overview { 
   margin: 1rem 0; 
-  opacity: .9; 
-  line-height: 1.5;
+  opacity: .95; 
 }
 
-/* Rating */
 .rating { 
   display: flex; 
   align-items: center; 
   gap: .25rem; 
   font-weight: 600; 
-  color: #e50914; /* rojo Netflix */
 }
 
-.rating mat-icon {
-  color: gold;
-}
-
-/* Chips de géneros */
 .chips { 
   margin: .5rem 0 1rem; 
 }
 
-mat-chip {
-  background: #333;
-  color: white;
-}
-
-/* Estado de no encontrado */
 .not-found { 
   text-align: center; 
   margin-top: 3rem; 
-  color: white;
 }
 
 @media (max-width: 900px) { 
