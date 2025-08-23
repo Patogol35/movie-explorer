@@ -110,15 +110,6 @@ export class MovieService {
       overview: 'Un exmarine se une a los Na’vi en Pandora para proteger su mundo.',
       rating: 7.9,
     },
-    {
-  id: 21,
-  title: 'Ratas, Ratones, Rateros',
-  year: 1999,
-  genres: ['Drama', 'Thriller'],
-  posterUrl: 'https://upload.wikimedia.org/wikipedia/en/7/7e/Ratas_Ratones_Rateros_poster.jpg',
-  overview: 'La historia de tres jóvenes que viven en los barrios marginales de Quito y buscan sobrevivir entre la pobreza, el crimen y sus propias decisiones.',
-  rating: 6.8,
-},
   ]);
 
   readonly movies = computed(() => this._movies());
