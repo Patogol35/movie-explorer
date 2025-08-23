@@ -66,7 +66,7 @@ export class MovieService {
   id: 9,
   title: 'El Rey León',
   year: 1994,
-  genres: ['Animation','Adventure','Drama','Family'],
+  genres: ['Animation','Adventure'],
   posterUrl: 'https://i.pinimg.com/736x/8d/69/98/8d699861805ba098b3d7a5097eff2bce.jpg',
   overview: 'Simba debe enfrentar traición y asumir su destino como rey.',
   rating: 8.5,
