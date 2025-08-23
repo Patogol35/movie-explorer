@@ -10,7 +10,7 @@ export class MovieService {
     
     {
       id: 1,
-      title: 'Te amo bianca',
+      title: 'Titanic',
       year: 1997,
       genres: ['Romance', 'Drama'],
       posterUrl: 'https://storage.googleapis.com/pod_public/750/266355.jpg',
