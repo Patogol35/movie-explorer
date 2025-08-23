@@ -102,7 +102,7 @@ export class MovieService {
     },
 
   {
-      id: 20,
+      id: 13,
       title: 'Avatar',
       year: 2009,
       genres: ['Sci-Fi', 'Adventure'],
@@ -110,6 +110,17 @@ export class MovieService {
       overview: 'Un exmarine se une a los Na’vi en Pandora para proteger su mundo.',
       rating: 7.9,
     },
+
+{
+  id: 14,
+  title: 'Dragon Ball Super: Broly',
+  year: 2018,
+  genres: ['Action', 'Adventure', 'Fantasy', 'Anime'],
+  posterUrl: 'https://upload.wikimedia.org/wikipedia/en/0/01/Dragon_Ball_Super_Broly_poster.jpg',
+  overview: 'Goku y Vegeta enfrentan a Broly, un Saiyajin con un poder abrumador, en una batalla épica que redefine sus límites.',
+  rating: 8.1,
+}
+    
   ]);
 
   readonly movies = computed(() => this._movies());
