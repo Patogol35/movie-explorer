@@ -7,7 +7,7 @@ export class MovieService {
   private readonly _movies = signal<Movie[]>([
 
 {
-  id: 0,
+  id: 30,
   name: 'Jorge Santamaría',
   country: 'Ecuador',
   hobbies: ['Programación','Música'],
