@@ -9,10 +9,16 @@ import { MatToolbarModule } from '@angular/material/toolbar';
   standalone: true,
   imports: [CommonModule, MatToolbarModule, MovieCardComponent, SearchFilterComponent],
   template: `
-    <mat-toolbar color="primary" class="toolbar">
-      <span class="logo">🎬 Movie Explorer</span> <br> <br>
-      <span class="logo">Proyecto desarrollado por Jorge Patricio Santamaría Cherrez</span>
-    </mat-toolbar>
+
+<mat-toolbar color="primary" class="toolbar">
+  <span class="logo">
+    🎬 Movie Explorer
+  </span>
+  <span class="logo">
+    Proyecto desarrollado por <br> Jorge Patricio Santamaría Cherrez
+  </span>
+</mat-toolbar>
+
     <div class="container">
       <app-search-filter (changed)="onFilter($event)" #sf></app-search-filter>
       <div class="grid">
