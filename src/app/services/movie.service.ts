@@ -137,7 +137,7 @@ export class MovieService {
   id: 16,
   title: 'Chiquita',
   year: 2025,
-  genres: ['Adventure'],
+  genres: ['Animation','Adventure'],
   posterUrl:'https://scontent.fuio1-2.fna.fbcdn.net/v/t39.30808-6/538077532_1123637219869974_2509855717755857570_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=x75ehI-8b68Q7kNvwErlDtv&_nc_oc=AdkSHD1Xx6v-rbXHXQDQi_6bYkgO1c0VsKSiN5OIcjdyE5yH_ukvt0WQEaUoWyTPoSnkcrdf0SJrvdEi2gXREsr2&_nc_zt=23&_nc_ht=scontent.fuio1-2.fna&_nc_gid=3C9gtF8aA1QMAHRBNOTJoA&oh=00_AfXqOb9iznQrK9kksxU4kG8DvzxU5PQYLtJNWpDJ6pABdg&oe=68B06209',
   overview: 'Aventuras de Chiquita',
   rating: 9.0,
