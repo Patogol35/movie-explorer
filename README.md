@@ -17,10 +17,9 @@ Este proyecto permite explorar un catálogo de películas, filtrarlas por géner
 
 - Vista de detalle de cada película
 
-- Routing básico para navegación
+-;Routing básico para navegación
 
 - Angular Material para diseño responsivo y elegante
-
 
 ---
 
@@ -28,36 +27,40 @@ Este proyecto permite explorar un catálogo de películas, filtrarlas por géner
 
 ✅ Requisitos previos
 
-- Node.js versión 18 o 20
+Node.js versión 18 o 20
 
-- Angular CLI versión 17+
+Angular CLI versión 17+
 
 
-Instalación de Angular CLI:
+Instalar Angular CLI si aún no lo tienes:
 
-- npm install -g @angular/cli
+npm install -g @angular/cli
+
 
 ⚡ Pasos para correr el proyecto
 
-1. Crea un nuevo proyecto Angular con standalone y SCSS
+1. Clona el repositorio
 
-ng new movie-explorer --standalone --routing --style=scss
+git clone https://github.com/Patogol35/movie-explorer.git
+
+
+2. Ingresa a la carpeta del proyecto
 
 cd movie-explorer
 
-2. Agrega Angular Material
 
-ng add @angular/material
-
-3. Instala dependencias
+3. Instala las dependencias
 
 npm install
+
 
 4. Inicia el servidor de desarrollo
 
 ng serve -o
 
-El proyecto se abrirá automáticamente en tu navegador en http://localhost:4200/.
+
+
+El proyecto se abrirá automáticamente en tu navegador en 👉 http://localhost:4200.
 
 ---
 
@@ -71,17 +74,16 @@ El proyecto se abrirá automáticamente en tu navegador en http://localhost:4200
 
 ⚙️ Tecnologías usadas
 
-Angular 17 
+Angular 17
 
 TypeScript
 
 Angular Material
+
 
 ---
 
 👨‍💻 Autor
 
 Jorge Patricio Santamaría Cherrez
-
-Máster en Ingeniería de Software y Sistemas Informáticos 
-
+Máster en Ingeniería de Software y Sistemas Informáticos
