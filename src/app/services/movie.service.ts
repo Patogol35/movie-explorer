@@ -133,6 +133,16 @@ export class MovieService {
   rating: 8.6,
     },
     
+    {
+  id: 16,
+  title: 'Chiquita',
+  year: 2025,
+  genres: ['Adventure'],
+  posterUrl:'https:www.facebook.com/share/p/1B3K9Z9PNK/',
+  overview: 'Aventuraw de Chiquita',
+  rating: 9.0,
+    },
+    
   ]);
 
   readonly movies = computed(() => this._movies());
