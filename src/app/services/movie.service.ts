@@ -129,7 +129,7 @@ export class MovieService {
   year: 2001,
   genres: ['Fantasy','Adventure','Anime'],
   posterUrl:'https://www.lavanguardia.com/peliculas-series/images/all/movie/posters/2001/7/movie-129/w1280/RTVpv1HmdbMi7iPpVURuCupTW4.jpg',
-  overview: 'Chihiro, una niña de 10 años, queda atrapada en un mundo mágico gobernado por dioses, brujas y espíritus. Para salvar a sus padres y regresar al mundo humano, debe encontrar su valor y madurar en el proceso.',
+  overview: 'Chihiro, una niña de 10 años, queda atrapada en un mundo mágico gobernado por dioses y espíritus. Para salvar a sus padres y regresar al mundo humano, debe encontrar su valor y madurar en el proceso.',
   rating: 8.6,
     },
     
