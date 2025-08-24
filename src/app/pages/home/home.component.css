@@ -31,9 +31,6 @@
   gap: 1rem;
 }
 
-
-
-
 .toolbar-content {
   display: flex;
   flex-direction: column; /* apila verticalmente */
@@ -47,7 +44,9 @@
 }
 
 .subtitle {
+  font-weight: 700; 
   font-size: 1.2rem;
+  letter-spacing: .5px; 
   color: #e50914;
   margin-top: 2px; /* separa un poco del logo */
 }
