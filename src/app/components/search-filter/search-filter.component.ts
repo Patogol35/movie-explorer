@@ -13,7 +13,7 @@ import { FormsModule } from '@angular/forms';
     <div class="toolbar">
       <mat-form-field appearance="outline" class="search">
         <mat-label>Buscar película</mat-label>
-        <input matInput [(ngModel)]="query" (ngModelChange)="emit()" placeholder="Ej: Solaris" />
+        <input matInput [(ngModel)]="query" (ngModelChange)="emit()" placeholder="Ej: Titanic" />
         <button matSuffix mat-icon-button aria-label="clear" *ngIf="query" (click)="clear()">
           <mat-icon>close</mat-icon>
         </button>
