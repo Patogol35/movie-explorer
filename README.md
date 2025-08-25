@@ -23,7 +23,7 @@ Este proyecto permite explorar un catálogo de películas, filtrarlas por géner
 
 ---
 
-🚀 Instalación y ejecución
+Instalación y ejecución
 
 ✅ Requisitos previos
 
@@ -57,8 +57,6 @@ npm install
 4. Inicia el servidor de desarrollo
 
 ng serve -o
-
-
 
 El proyecto se abrirá automáticamente en tu navegador en 👉 http://localhost:4200.
 
