@@ -54,11 +54,13 @@ cd movie-explorer
 npm install
 
 
-4. Inicia el servidor de desarrollo
+4. Ejecuta el proyecto:
 
 ng serve -o
 
-El proyecto se abrirá automáticamente en tu navegador en 👉 http://localhost:4200.
+5. Abre el navegador:
+
+http://localhost:4200.
 
 ---
 
