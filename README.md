@@ -23,13 +23,13 @@ Este proyecto permite explorar un catálogo de películas, filtrarlas por géner
 
 ---
 
-Instalación y ejecución
+📦 Instalación y ejecución
 
-✅ Requisitos previos
+Requisitos previos
 
-Node.js versión 18 o 20
+- Node.js versión 18 o 20
 
-Angular CLI versión 17+
+- Angular CLI versión 17+
 
 
 Instalar Angular CLI si aún no lo tienes:
@@ -37,7 +37,7 @@ Instalar Angular CLI si aún no lo tienes:
 npm install -g @angular/cli
 
 
-⚡ Pasos para correr el proyecto
+Pasos para correr el proyecto
 
 1. Clona el repositorio
 
