@@ -7,6 +7,12 @@ Este proyecto permite explorar un catálogo de películas, filtrarlas por géner
 
 ---
 
+💻 Ver la aplicación desplegada en Vercel:
+
+https://jorgepatriciosantamariacherrezmovie.vercel.app/
+
+---
+
 ✨ Funcionalidades
 
 - Catálogo en tarjetas con pósters de películas
