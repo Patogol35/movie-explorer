@@ -1,0 +1,19 @@
+<a class="card-link" [routerLink]="['/movie', movie?.id]" *ngIf="movie">
+  <mat-card class="movie-card" appearance="outlined">
+    <img mat-card-image [src]="movie.posterUrl" [alt]="movie.title" loading="lazy"/>
+    <mat-card-content>
+      <div class="title">
+        {{ movie.title }}
+        <span class="year">({{ movie.year }})</span>
+      </div>
+      <div class="meta">
+        <mat-chip-set aria-label="Géneros">
+          <mat-chip *ngFor="let g of movie.genres" [disableRipple]="true">{{ g }}</mat-chip>
+        </mat-chip-set>
+        <div class="rating">
+          <mat-icon>star</mat-icon> {{ movie.rating | number:'1.1-1' }}
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</a>
