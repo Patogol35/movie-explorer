@@ -1,0 +1,28 @@
+<div class="toolbar">
+  <mat-form-field appearance="outline" class="search">
+    <mat-label>Buscar película</mat-label>
+    <input
+      matInput
+      [(ngModel)]="query"
+      (ngModelChange)="emit()"
+      placeholder="Ej: Titanic"
+    />
+    <button
+      matSuffix
+      mat-icon-button
+      aria-label="clear"
+      *ngIf="query"
+      (click)="clear()"
+    >
+      <mat-icon>close</mat-icon>
+    </button>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" class="genre">
+    <mat-label>Género</mat-label>
+    <mat-select [(ngModel)]="genre" (selectionChange)="emit()">
+      <mat-option [value]="''">Todos</mat-option>
+      <mat-option *ngFor="let g of genres()" [value]="g">{{ g }}</mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
