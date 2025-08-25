@@ -1,0 +1,20 @@
+.toolbar { 
+  display: grid; 
+  grid-template-columns: 1fr 220px; 
+  gap: 1rem; 
+  align-items: center; 
+}
+
+@media (max-width: 700px) { 
+  .toolbar { 
+    grid-template-columns: 1fr; 
+  } 
+}
+
+.search { 
+  width: 100%; 
+}
+
+.genre { 
+  width: 100%; 
+}
