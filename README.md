@@ -17,7 +17,7 @@ Este proyecto permite explorar un catálogo de películas, filtrarlas por géner
 
 - Vista de detalle de cada película
 
--;Routing básico para navegación
+- Routing básico para navegación
 
 - Angular Material para diseño responsivo y elegante
 
