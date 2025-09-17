@@ -1,3 +1,8 @@
+/* Transición suave para cambios de tema */
+body, .toolbar, .container, .grid, .empty {
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
 /* Barra superior fija */
 .toolbar { 
   position: sticky; 
@@ -5,6 +10,10 @@
   z-index: 10; 
   background: #141414; 
   color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
 }
 
 /* Logo destacado */
@@ -12,7 +21,16 @@
   font-weight: 700; 
   font-size: 1.4rem;
   letter-spacing: .5px; 
-  color: #1e88e5; /* Azul profesional */
+  color: #1e88e5; /* azul profesional */
+}
+
+/* Subtítulo */
+.subtitle {
+  font-weight: 700; 
+  font-size: 1.2rem;
+  letter-spacing: .5px; 
+  color: #1e88e5;
+  margin-top: 2px;
 }
 
 /* Contenedor */
@@ -29,19 +47,6 @@
   display: grid; 
   grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); 
   gap: 1rem;
-}
-
-.toolbar-content {
-  display: flex;
-  flex-direction: column; /* apila verticalmente */
-}
-
-.subtitle {
-  font-weight: 700; 
-  font-size: 1.2rem;
-  letter-spacing: .5px; 
-  color: #1e88e5; /* Azul profesional */
-  margin-top: 2px; /* separa un poco del logo */
 }
 
 /* Ajustes de cada tarjeta */
@@ -63,9 +68,40 @@ app-movie-card:hover {
   opacity: 1; 
   text-align: center; 
   margin-top: 3rem; 
-  color: #1e88e5; /* Azul profesional */
+  color: #1e88e5; /* azul profesional */
   font-size: 1.2rem;
   font-weight: 600;
   letter-spacing: 0.3px;
   text-shadow: 0 1px 3px rgba(0,0,0,0.4);
+}
+
+/* Modo claro (por defecto) */
+body {
+  background: #f5f5f5;
+  color: #222;
+}
+
+/* Modo oscuro */
+body.dark-theme {
+  background: #141414;
+  color: white;
+}
+
+/* Ajustes específicos de toolbar */
+body.dark-theme .toolbar {
+  background: #141414;
+}
+
+body .toolbar {
+  background: #ffffff;
+  color: #141414;
+}
+
+/* Texto "sin resultados" adaptado al tema */
+body.dark-theme .empty {
+  color: #1e88e5; /* azul en oscuro */
+}
+
+body .empty {
+  color: #1565c0; /* azul en claro */
 }
