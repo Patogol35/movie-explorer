@@ -1,30 +1,11 @@
-<mat-toolbar color="primary">
-  <span class="logo">🎬 CineApp</span>
-  <span class="subtitle">Tu catálogo de películas</span>
+<mat-toolbar color="primary" class="toolbar">
 
-  <span class="spacer"></span>
-
-  <button mat-icon-button (click)="toggleTheme()">
-    <mat-icon>{{ isDark ? 'dark_mode' : 'light_mode' }}</mat-icon>
-  </button>
-</mat-toolbar>
-
-<div class="content">
-  <div class="movie-list" *ngIf="!selectedMovie">
-    <mat-chip-listbox>
-      <mat-chip *ngFor="let movie of movies" (click)="showDetails(movie)">
-        {{ movie.title }}
-      </mat-chip>
-    </mat-chip-listbox>
-
-    <div *ngIf="movies.length === 0" class="empty">
-      No hay películas disponibles 🎥
-    </div>
-  </div>
-
-  <app-movie-detail
-    *ngIf="selectedMovie"
-    [movie]="selectedMovie"
-    (close)="closeDetails()">
-  </app-movie-detail>
+  <div class="toolbar-content">  
+    <span class="logo">🎬 Movie Explorer</span>  
+    <span class="subtitle">Autor: Jorge Patricio Santamaría Cherrez</span>  
+  </div>  
+</mat-toolbar>  <div class="container">  
+  <app-search-filter (changed)="onFilter($event)" #sf></app-search-filter>    <div class="grid">  
+    <app-movie-card *ngFor="let m of filtered" [movie]="m"></app-movie-card>  
+  </div>    <p class="empty" *ngIf="filtered.length === 0">No se encontraron resultados.</p>  
 </div>
