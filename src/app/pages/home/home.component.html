@@ -3,6 +3,11 @@
     <span class="logo">🎬 Movie Explorer</span>
     <span class="subtitle">Autor: Jorge Patricio Santamaría Cherrez</span>
   </div>
+
+  <!-- Botón claro/oscuro -->
+  <button mat-icon-button (click)="toggleTheme()">
+    <mat-icon>{{ isDark ? 'light_mode' : 'dark_mode' }}</mat-icon>
+  </button>
 </mat-toolbar>
 
 <div class="container">
