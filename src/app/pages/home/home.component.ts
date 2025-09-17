@@ -4,16 +4,26 @@ import { MovieService } from '../../services/movie.service';
 import { MovieCardComponent } from '../../components/movie-card/movie-card.component';
 import { SearchFilterComponent } from '../../components/search-filter/search-filter.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, MatToolbarModule, MovieCardComponent, SearchFilterComponent],
+  imports: [
+    CommonModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatIconModule,
+    MovieCardComponent,
+    SearchFilterComponent
+  ],
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']   // 👈 ahora apunta al archivo css externo
+  styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
   filtered: any[] = [];
+  isDark = true; // estado inicial del tema
 
   @ViewChild('sf') searchFilter?: SearchFilterComponent;
 
@@ -33,5 +43,10 @@ export class HomeComponent implements OnInit {
       const byGenre = !genre || m.genres.includes(genre);
       return byTitle && byGenre;
     });
+  }
+
+  toggleTheme() {
+    this.isDark = !this.isDark;
+    document.body.classList.toggle('dark-theme', this.isDark);
   }
 }
