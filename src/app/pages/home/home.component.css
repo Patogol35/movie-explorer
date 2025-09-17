@@ -1,4 +1,4 @@
-/* Barra superior fija */
+ /* Barra superior fija */
 .toolbar { 
   position: sticky; 
   top: 0; 
@@ -15,30 +15,36 @@
   color: #1e88e5; /* Azul profesional */
 }
 
-.container {
-  max-width: 1300px;
-  margin: 1rem auto;
-  padding: 0 1rem 2rem;
-  display: grid;
+/* Contenedor */
+.container { 
+  max-width: 1300px; 
+  margin: 1rem auto; 
+  padding: 0 1rem 2rem; 
+  display: grid; 
+  gap: 1rem; 
+}
+
+/* Grid responsiva para películas */
+.grid { 
+  display: grid; 
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); 
   gap: 1rem;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-  gap: 1rem;
+.toolbar-content {
+  display: flex;
+  flex-direction: column; /* apila verticalmente */
 }
 
-.empty {
-  text-align: center;
-  margin-top: 3rem;
+.subtitle {
+  font-weight: 700; 
   font-size: 1.2rem;
-  font-weight: 600;
-  letter-spacing: 0.3px;
-  color: var(--mat-sys-primary);
-  text-shadow: 0 1px 3px rgba(0,0,0,0.4);
+  letter-spacing: .5px; 
+  color: #1e88e5; /* Azul profesional */
+  margin-top: 2px; /* separa un poco del logo */
 }
 
+/* Ajustes de cada tarjeta */
 app-movie-card {
   max-width: 180px;
   margin: auto;
@@ -46,10 +52,12 @@ app-movie-card {
   cursor: pointer;
 }
 
+/* Efecto hover estilo Netflix */
 app-movie-card:hover {
-  transform: scale(1.08);
+  transform: scale(1.1);
   z-index: 5;
 }
+
 /* Mensaje cuando no hay resultados */
 .empty { 
   opacity: 1; 
