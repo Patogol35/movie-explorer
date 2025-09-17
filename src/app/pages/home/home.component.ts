@@ -1,55 +1,37 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { MovieService } from '../../services/movie.service';
+import { MovieCardComponent } from '../../components/movie-card/movie-card.component';
+import { SearchFilterComponent } from '../../components/search-filter/search-filter.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatButtonModule } from '@angular/material/button';
-import { MatIconModule } from '@angular/material/icon';
-import { MatSelectModule } from '@angular/material/select';
-import { MatChipsModule } from '@angular/material/chips';
-import { MovieCardComponent } from '../movie-card/movie-card.component';
-import { MovieDetailComponent } from '../movie-detail/movie-detail.component';
-import { ThemeService } from '../services/theme.service';
 
 @Component({
-  selector: 'app-home',
-  standalone: true,
-  imports: [
-    CommonModule,
-    MatToolbarModule,
-    MatButtonModule,
-    MatIconModule,
-    MatSelectModule,
-    MatChipsModule,
-    MovieCardComponent,
-    MovieDetailComponent,
-  ],
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss'],
+selector: 'app-home',
+standalone: true,
+imports: [CommonModule, MatToolbarModule, MovieCardComponent, SearchFilterComponent],
+templateUrl: './home.component.html',
+styleUrls: ['./home.component.css']   // 👈 ahora apunta al archivo css externo
 })
 export class HomeComponent implements OnInit {
-  isDark = false;
-  movies = [
-    { id: 1, title: 'Inception', genre: 'Sci-Fi', description: 'A dream within a dream.' },
-    { id: 2, title: 'Interstellar', genre: 'Adventure', description: 'Space exploration and time.' },
-    { id: 3, title: 'The Dark Knight', genre: 'Action', description: 'Batman vs Joker.' },
-  ];
-  selectedMovie: any = null;
+filtered: any[] = [];
 
-  constructor(private themeService: ThemeService) {}
+@ViewChild('sf') searchFilter?: SearchFilterComponent;
 
-  ngOnInit() {
-    this.isDark = this.themeService.loadTheme();
-  }
+constructor(private movieService: MovieService) {}
 
-  toggleTheme() {
-    this.isDark = !this.isDark;
-    this.themeService.toggleTheme(this.isDark);
-  }
+ngOnInit(): void {
+this.filtered = this.movieService.movies();
+const genres = this.movieService.getAllGenres();
+setTimeout(() => this.searchFilter?.setGenres(genres));
+}
 
-  showDetails(movie: any) {
-    this.selectedMovie = movie;
-  }
-
-  closeDetails() {
-    this.selectedMovie = null;
-  }
+onFilter({ query, genre }: { query: string; genre: string }) {
+const q = query.toLowerCase();
+const all = this.movieService.movies();
+this.filtered = all.filter(m => {
+const byTitle = m.title.toLowerCase().includes(q);
+const byGenre = !genre || m.genres.includes(genre);
+return byTitle && byGenre;
+});
+}
 }
