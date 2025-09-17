@@ -12,7 +12,7 @@
   font-weight: 700; 
   font-size: 1.4rem;
   letter-spacing: .5px; 
-  color: #e50914; /* rojo estilo Netflix */
+  color: #1e88e5; /* Azul profesional */
 }
 
 /* Contenedor */
@@ -40,7 +40,7 @@
   font-weight: 700; 
   font-size: 1.2rem;
   letter-spacing: .5px; 
-  color: #e50914;
+  color: #1e88e5; /* Azul profesional */
   margin-top: 2px; /* separa un poco del logo */
 }
 
