@@ -36,3 +36,37 @@ body {
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/* Tema oscuro por defecto */
+body.dark-theme {
+  --bg: #121212;
+  --text: #ffffff;
+  --primary: #1e88e5;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* Tema claro */
+body.light-theme {
+  --bg: #fafafa;
+  --text: #111;
+  --primary: #1976d2;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* Aplica variables a Angular Material */
+.mat-toolbar {
+  background: var(--bg) !important;
+  color: var(--text) !important;
+}
+
+.mat-card {
+  background: var(--bg);
+  color: var(--text);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+a, .logo, .subtitle, .empty, .rating {
+  color: var(--primary) !important;
+}
