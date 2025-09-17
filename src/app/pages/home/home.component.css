@@ -10,7 +10,7 @@
 /* Logo destacado */
 .logo { 
   font-weight: 700; 
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   letter-spacing: .5px; 
   color: #e50914; /* rojo estilo Netflix */
 }
@@ -36,13 +36,6 @@
   flex-direction: column; /* apila verticalmente */
 }
 
-.logo {
-  font-weight: 700; 
-  font-size: 1.4rem;
-  letter-spacing: .5px; 
-  color: #e50914; /* rojo estilo Netflix */
-}
-
 .subtitle {
   font-weight: 700; 
   font-size: 1.2rem;
@@ -50,8 +43,6 @@
   color: #e50914;
   margin-top: 2px; /* separa un poco del logo */
 }
-
-
 
 /* Ajustes de cada tarjeta */
 app-movie-card {
@@ -69,9 +60,12 @@ app-movie-card:hover {
 
 /* Mensaje cuando no hay resultados */
 .empty { 
-  opacity: .8; 
+  opacity: 1; 
   text-align: center; 
-  margin-top: 2rem; 
-  color: white;
-  font-size: 1.1rem;
+  margin-top: 3rem; 
+  color: #1e88e5; /* Azul profesional */
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.4);
 }
