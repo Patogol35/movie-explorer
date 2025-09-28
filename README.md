@@ -80,11 +80,11 @@ http://localhost:4200.
 
 ⚙️ Tecnologías usadas
 
-Angular 17
+- Angular 17
 
-TypeScript
+- TypeScript
 
-Angular Material
+- Angular Material
 
 
 ---
