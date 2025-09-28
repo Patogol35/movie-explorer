@@ -38,31 +38,47 @@ Requisitos previos
 - Angular CLI versión 17+
 
 
-Instalar Angular CLI si aún no lo tienes:
+Instalar Angular CLI si aún no lo tienes: 
+
+```bash
 
 npm install -g @angular/cli
 
+```
 
 Pasos para correr el proyecto
 
 1. Clona el repositorio
 
+```bash
+
 git clone https://github.com/Patogol35/movie-explorer.git
 
+```
 
 2. Ingresa a la carpeta del proyecto
 
+```bash
+
 cd movie-explorer
 
+```
 
 3. Instala las dependencias
 
+```bash
+
 npm install
 
+```
 
 4. Ejecuta el proyecto:
 
+```bash
+
 ng serve -o
+
+```
 
 5. Abre el navegador:
 
